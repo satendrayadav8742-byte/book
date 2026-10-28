@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electronics Books</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+        }
+
+        h1 {
+            text-align: center;
+            color: #17365d;
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: lightblue;
+        }
+
+        .cover {
+            width: 120px;
+            height: 165px;
+            margin: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            border: 3px solid #ddd;
+        }
+
+        .basic {
+            background: linear-gradient(140deg, #123c69, #2980b9);
+        }
+
+        .devices {
+            background: linear-gradient(140deg, #252b48, #6c3483);
+        }
+
+        .digital {
+            background: linear-gradient(140deg, #064e3b, #10b981);
+        }
+
+        .cover-title {
+            font-size: 17px;
+        }
+
+        .cover-subtitle {
+            font-size: 10px;
+            margin-top: 12px;
+        }
+
+        .fallback {
+            display: none;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Electronics Books</h1>
+
+    <table>
+        <tr>
+            <th>Book Cover</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>
+                <img
+                    src="https://covers.openlibrary.org/b/title/Principles%20of%20Electronics-M.jpg"
+                    alt="Principles of Electronics cover"
+                    width="120" height="165"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="cover basic fallback">
+                    <span class="cover-title">ELECTRONICS</span>
+                    <span class="cover-subtitle">PRINCIPLES & BASICS</span>
+                </div>
+            </td>
+            <td>Principles of Electronics</td>
+            <td>V. K. Mehta</td>
+            <td>₹450</td>
+        </tr>
+
+        <tr>
+            <td>
+                <img
+                    src="https://covers.openlibrary.org/b/title/Electronic%20Devices%20and%20Circuit%20Theory-M.jpg"
+                    alt="Electronic Devices cover"
+                    width="120" height="165"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="cover devices fallback">
+                    <span class="cover-title">ELECTRONIC DEVICES</span>
+                    <span class="cover-subtitle">CIRCUIT THEORY</span>
+                </div>
+            </td>
+            <td>Electronic Devices and Circuit Theory</td>
+            <td>Robert L. Boylestad</td>
+            <td>₹550</td>
+        </tr>
+
+        <tr>
+            <td>
+                <img
+                    src="https://covers.openlibrary.org/b/title/Digital%20Electronics-M.jpg"
+                    alt="Digital Electronics cover"
+                    width="120" height="165"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="cover digital fallback">
+                    <span class="cover-title">DIGITAL ELECTRONICS</span>
+                    <span class="cover-subtitle">LOGIC & CIRCUITS</span>
+                </div>
+            </td>
+            <td>Digital Electronics</td>
+            <td>R. P. Jain</td>
+            <td>₹500</td>
+        </tr>
+    </table>
+
+   
+</body>
+</html>

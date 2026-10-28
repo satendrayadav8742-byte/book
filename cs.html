@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Science Books</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #17365d;
+        }
+
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        .cover {
+            width: 120px;
+            height: 165px;
+            margin: auto;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 8px;
+            border: 3px solid #ddd;
+        }
+
+        .letusc {
+            background: #176b50;
+        }
+
+        .cpp {
+            background: #294c80;
+        }
+
+        .java {
+            background: #a84427;
+        }
+
+        .python {
+            background: #e0bd46;
+            color: #172d50;
+        }
+
+        .fallback {
+            display: none;
+        }
+
+        .book-title {
+            font-size: 17px;
+        }
+
+        .book-subtitle {
+            font-size: 11px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Computer Science Books</h1>
+
+    <table>
+        <tr>
+            <th>Book Cover</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>
+                <img
+                    src="https://covers.openlibrary.org/b/title/Let%20Us%20C-M.jpg"
+                    alt="Let Us C cover"
+                    width="120"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="cover letusc fallback">
+                    <span class="book-title">LET US C</span>
+                    <span class="book-subtitle">Programming in C</span>
+                </div>
+            </td>
+            <td>Let Us C</td>
+            <td>Yashavant Kanetkar</td>
+            <td>₹450</td>
+        </tr>
+
+        <tr>
+            <td>
+                <img
+                    src="https://covers.openlibrary.org/b/title/The%20C%2B%2B%20Programming%20Language-M.jpg"
+                    alt="C++ book cover"
+                    width="120"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                <div class="cover cpp fallback">
+                    <span class="book-title">C++</span>
+                    <span class="book-subtitle">PROGRAMMING LANGUAGE</span>
+                </div>
+            </td>
+            <td>C++ Programming</td>
+            <td>Bjarne Stroustrup</td>
+            <td>₹550</td>
+        </tr>
+
+        <tr>
+            <td>
+               <div class="cover java">
+               <span class="book-title">JAVA</span>
+               <span class="book-subtitle">THE COMPLETE REFERENCE</span>
+</div>
+
+                <div class="cover java fallback">
+                    <span class="book-title">JAVA</span>
+                    <span class="book-subtitle">THE COMPLETE REFERENCE</span>
+                </div>
+            </td>
+            <td>Java Programming</td>
+            <td>Herbert Schildt</td>
+            <td>₹600</td>
+        </tr>
+
+        <tr>
+            <td>
+                
+<div class="cover python">
+    <span class="book-title">PYTHON</span>
+    <span class="book-subtitle">LEARNING PYTHON</span>
+        </div>
+
+
+                <div class="cover python fallback">
+                    <span class="book-title">PYTHON</span>
+                    <span class="book-subtitle">LEARNING PYTHON</span>
+                </div>
+            </td>
+            <td>Python Programming</td>
+            <td>Mark Lutz</td>
+            <td>₹500</td>
+        </tr>
+    </table>
+
+</body>
+</html>
